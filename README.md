@@ -24,3 +24,7 @@ A lightweight neural network library written in ANSI-C supporting prediction and
 - `Tanh`: hyperbolic tangent curve, only for Dense- and Output layers.
 - `Softsign`: softsign curve, only for Dense- and Output layers.
 - `Softmax`: softmax function, only for the Output layer.
+
+## Different loss functions:
+- `MSE`: mean squared error
+- `Categorical cross entropy`: softmax loss (used always in combination with the Softmax activation in Output layers)
