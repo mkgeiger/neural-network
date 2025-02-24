@@ -28,3 +28,12 @@ A lightweight neural network library written in ANSI-C supporting prediction and
 ## Different loss functions:
 - `MSE`: mean squared error
 - `Categorical cross entropy`: softmax loss (used always in combination with the Softmax activation in Output layers)
+
+## Different random function types (used to initialize weights, biases and filter values):
+- `Uniform` (uniform distributed): general purpose, lightweight models
+- `Normal` (gaussian distributed): general purpose
+- `Glorot uniform`: general purpose, sigmoid, tanh, ReLU activations, classification
+- `Glorot normal`: sensitive training, sigmoid, tanh or softmax activations, regression
+- `HE uniform`: wide Layers, ReLU and variants (Leaky ReLU), classification
+- `HE normal`: very deep networks, ReLU and variants (Leaky ReLU), regression
+
