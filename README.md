@@ -29,7 +29,7 @@ A lightweight neural network library written in ANSI-C supporting prediction and
 - `MSE`: mean squared error
 - `Categorical cross entropy`: softmax loss (used always in combination with the Softmax activation in Output layers)
 
-## Different random function types (used to initialize weights, biases and filter values):
+## Different random function types (used to initialize weights, biases and filter values when training begins):
 - `Uniform` (uniform distributed): general purpose, lightweight models
 - `Normal` (gaussian distributed): general purpose
 - `Glorot uniform`: general purpose, sigmoid, tanh, ReLU activations, classification
@@ -37,3 +37,12 @@ A lightweight neural network library written in ANSI-C supporting prediction and
 - `HE uniform`: wide Layers, ReLU and variants (Leaky ReLU), classification
 - `HE normal`: very deep networks, ReLU and variants (Leaky ReLU), regression
 
+## Different optimizer function types (used to adjust weights, biases and filter values during the training):
+- `SGD`: stochastic gradient descent
+- `SGD with decay`: stochastic gradient descent with decay
+- `Adapt`: stochastic gradient descent with adapt
+- `Momentum`: stochastic gradient descent with momentum
+- `RMSProp`: root mean square propagation
+- `Adagrad`: adaptive gradient algorithm
+- `Adam`: adaptive moment estimation
+  
